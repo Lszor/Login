@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --coolor-1: #0d1b2a;
+  --coolor-2: #1b263b;
+  --coolor-3: #edf2f4;
+  --coolor-4: #778da9;
+  --coolor-5: #415a77;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--coolor-1);
+  height: 100vh;
+  width: 100vw;
+}
+
+body,
+html {
+  background-color: var(--coolor-1);
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: block;
+  width: 300px;
+  height: 500px;
+  background-color: var(--coolor-2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: -2px -2px 3px 1px rgba(0, 0, 0, 0.247);
+  overflow: hidden;
+  border: .1px solid var(--coolor-2);
+}
+
+.login-form {
+  background-color: var(--coolor-2);
+  padding: 10px;
+  display: block;
+}
+
+h1 {
+  font-weight: normal;
+  color: var(--coolor-3);
+  font-size: 2em;
+  margin: auto;
+  margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  color: var(--coolor-3);
+  font-weight: l;
+  margin: 20px 0 10px 0;
+}
+
+.input {
+  border-radius: 4px;
+  padding: 3px;
+  background-color: var(--coolor-1);
+  color: var(--coolor-3);
+  font-weight: normal;
+  margin: auto;
+  width: 100%;
+  border: .5px solid var(--coolor-5);
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, 0.397);
+}
+
+.input:focus {
+  outline: 2px solid var(--coolor-4);
+  border-color: var(--coolor-4);
+  color: var(--coolor-3);
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--coolor-5);
+  color: var(--coolor-3);
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, 0.397);
+}
+
+.button:hover {
+  background-color: var(--coolor-4);
+}
+
+.img {
+  background: var(--coolor-3) url('../images/pequeno.jpg') no-repeat fixed center center / cover;
+  height: 150px;
+  display: block;
+}
