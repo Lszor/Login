@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(135deg, var(--coolor-1), var(--coolor-2));
+  }
+
+  .container {
+    width: 70vw;
+    max-height: 90vh;
+    min-height: 300px;
+  }
+
+  .container>.img {
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+
+  .container>.login-form {
+    float: right;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+    max-width: 900px;
+
+  }
+
+  .container>.img {
+    float: left;
+    width: 50%;
+    height: 100%;
+
+  }
+
+  .container>.login-form {
+    float: right;
+    width: 50%;
+  }
+
+}

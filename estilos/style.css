@@ -26,17 +26,10 @@ html {
   width: 100vw;
 }
 
-body,
-html {
-  background-color: var(--coolor-1);
-  height: 100vh;
-  width: 100vw;
-}
-
 .container {
   display: block;
   width: 300px;
-  height: 500px;
+  height: 550px;
   background-color: var(--coolor-2);
   position: absolute;
   top: 50%;
@@ -46,6 +39,8 @@ html {
   box-shadow: -2px -2px 3px 1px rgba(0, 0, 0, 0.247);
   overflow: hidden;
   border: .1px solid var(--coolor-2);
+
+  transition: width .5s, height .5s ease-in-out;
 }
 
 .login-form {
@@ -60,14 +55,13 @@ h1 {
   font-size: 2em;
   margin: auto;
   margin-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 label {
   display: inline-block;
   color: var(--coolor-3);
-  font-weight: l;
+  font-weight: normal;
   margin: 20px 0 10px 0;
 }
 
@@ -108,6 +102,6 @@ label {
 
 .img {
   background: var(--coolor-3) url('../images/pequeno.jpg') no-repeat fixed center center / cover;
-  height: 150px;
+  height: 180px;
   display: block;
 }
