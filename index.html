@@ -19,24 +19,25 @@
       <form action="login.php" method="post" autocomplete="off">
 
         <div class="field">
-          <span class="material-symbols-outlined">
+          <label for="email"> Login</label>
+          <input class="input" type="email" name="email" id="email" placeholder="Digite seu email... " autofocus
+            autocomplete="email" maxlength="20" required>
+          <span class="material-symbols-outlined field-icon">
             account_circle
           </span>
-          <input class="input input-email" type="email" name="email" id="email" placeholder="Digite seu email... "
-            autofocus autocomplete="email" maxlength="20" required>
-          <label for="email"> Login</label>
         </div>
 
-        <field>
-          <span class="material-symbols-outlined">
+        <div class="field">
+          <label for="password">Senha </label>
+          <input class="input" type="password" name="password" id="password" placeholder="Digite sua senha..."
+            autocomplete="current-password" minlength="6" maxlength="20" required>
+          <span class="material-symbols-outlined field-icon">
             lock
           </span>
-          <input class="input input-password" type="password" name="password" id="password"
-            placeholder="Digite sua senha..." autocomplete="current-password" minlength="6" maxlength="20" required>
-          <label for="password">Senha </label>
-        </field>
-        <input class="button submit-button" type="submit" value="Entrar">
-        <a href="forgot-password.html">Esqueceu sua senha? <span class="material-symbols-outlined">help </span></a>
+        </div>
+        <input class="button" type="submit" value="Entrar">
+        <a id="forgot-button" href="forgot-password.html">Esqueceu sua senha? <span class="material-symbols-outlined"
+            id="forgot-icon">help </span></a>
       </form>
     </div>
   </div>
