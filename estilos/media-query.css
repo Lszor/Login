@@ -1,14 +1,9 @@
 @charset "UTF-8";
 
-@media only screen and (min-width: 768px) {
-  body {
-    background: linear-gradient(135deg, var(--coolor-1), var(--coolor-2));
-  }
 
+@media only screen and (min-width: 768px) {
   .container {
-    width: 70vw;
-    max-height: 90vh;
-    min-height: 300px;
+    width: 700px;
   }
 
   .container>.img-container {
@@ -25,21 +20,19 @@
 
 @media only screen and (min-width: 992px) {
   .container {
-    width: 70%;
-    max-width: 900px;
-
+    width: 700px;
   }
 
   .container>.img-container {
     float: left;
-    width: 40%;
+    width: 50%;
     height: 100%;
 
   }
 
   .container>.login-form {
     float: right;
-    width: 60%;
+    width: 50%;
   }
 
 }
