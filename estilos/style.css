@@ -63,8 +63,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  text-align: center;
   background-color: var(--coolor-2);
 }
 
@@ -109,8 +107,7 @@ h1 {
 
 
 .input,
-.button,
-#forgot-button {
+.button {
   padding: 3px;
   height: 34px;
   width: 100%;
@@ -125,30 +122,18 @@ h1 {
   border: .5px solid var(--coolor-5);
 }
 
-.button {
-  margin-bottom: 16px;
-  cursor: pointer;
-  background-color: var(--coolor-5);
-  border: none;
-}
-
-#forgot-button {
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-#forgot-icon {
-  font-size: .9em;
-  color: var(--coolor-4);
-}
-
 .input:focus,
 .input:hover {
   outline: 2px solid var(--coolor-4);
   border-color: var(--coolor-4);
   box-shadow: 1px 2px 2px .4px rgba(0, 0, 0, 0.397);
+}
+
+.button {
+  margin-bottom: 16px;
+  cursor: pointer;
+  background-color: var(--coolor-5);
+  border: none;
 }
 
 .button:hover {
@@ -159,6 +144,31 @@ h1 {
   transform: scale(0.98);
 }
 
+.forgot-container {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-top: auto
+}
+
+#forgot-button {
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 #forgot-button:hover {
   text-decoration: underline;
 }
+
+#forgot-icon {
+  font-size: 1em;
+  color: var(--coolor-4);
+  padding: 1px;
+  text-decoration: none;
+  
+}
+
+
