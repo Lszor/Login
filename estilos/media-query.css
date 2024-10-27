@@ -4,34 +4,20 @@
 @media only screen and (min-width: 768px) {
   .container {
     width: 700px;
+    flex-direction: row;
   }
 
   .container>.img-container {
-    float: left;
     width: 50%;
     height: 100%;
   }
 
   .container>.login-form {
-    float: right;
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 700px;
-  }
-
-  .container>.img-container {
-    float: left;
     width: 50%;
     height: 100%;
-
   }
 
-  .container>.login-form {
-    float: right;
+  #forgot-button {
+    margin: auto 0 30px;
   }
-
 }
